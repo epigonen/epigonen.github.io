@@ -998,7 +998,7 @@
                 <div class="autogrid">
                     <div>
                         <p>戦闘が終了すると、その戦闘での戦果に応じて報酬の<span class="cb">C-Bill</span>を獲得します。キルやアシストなど、敵メックの破壊に関係した種類のボーナス項目が多いので、基本的には勝利した時の方が報酬は多くなります。はじめのうちはあまり貰えなくてガッカリするかもしれませんが、慣れてくると1戦で100,000 C-Bill前後の報酬を受け取れます。ある程度の実力や偶然、幸運によって上手くボーナスを獲得できた場合は1戦で200,000 C-Bill前後の報酬になります。</p>
-                        <p>ゲームをはじめたばかりの場合、1戦を終えるごとに通常の戦闘報酬とは別にC-Billを獲得することができます。これは<b>Cadet Bonus</b>というもので、<b>25戦</b>を終えるまで貰えます。1戦毎に貰える金額が少しずつ減っていきますが、合計で約8,000,000 C-Bill貰えます。<span class="text-negative">25戦以降は通常の戦闘報酬しか貰えなくなるため収入は少なくなります、大切に使いましょう。</span></p>
+                        <p>ゲームをはじめたばかりの場合、1戦を終えるごとに通常の戦闘報酬とは別にC-Billを獲得することができます。これは<b>Cadet Bonus</b>というもので、<b>25戦</b>を終えるまで貰えます。1戦毎に貰える金額が少しずつ減っていきますが、合計で12,500,000 C-Bill貰えます。<span class="text-negative">25戦以降は通常の戦闘報酬しか貰えなくなるため収入は少なくなります、大切に使いましょう。</span></p>
                     </div>
                     <figure>
                         <img src="./img/cadetbonus.png" alt="Armor" />
@@ -1094,7 +1094,7 @@
                     <div class="autogrid">
                         <div>
                             <p><abbr title="Pilot Skill Rating">PSR</abbr>はプレイヤーの腕前をあらわす指標で、マッチングの際にチームの戦力バランスを調整するために参照されます。PSRは試合で獲得したマッチスコアに応じて増減するという話になっていますが、実際は勝敗がかなり大きく影響します。</p>
-                            <p>このPSRの値によって、プレイヤーにはTier 1からTier 5までの格付けがなされます。最も腕の良いプレイヤーで構成されるのがTier 1で、そうでないのがTier 5になります。はじめたばかりのプレイヤーはTier 4からスタートします。Tier 4とTier 5のプレイヤーはTier 1のプレイヤーとマッチングしないように保護されます。</p>
+                            <p>このPSRの値によって、プレイヤーにはTier 1からTier 5までの格付けがなされます。最も腕の良いプレイヤーで構成されるのがTier 1で、そうでないのがTier 5になります。はじめたばかりのプレイヤーはTier 5からスタートします。Tier 4とTier 5のプレイヤーはTier 1のプレイヤーとマッチングしないように保護されます。</p>
                             <p>自分のTierはホーム画面から確認することができます。画像にあるTierの下に表示されているゲージが最大になると上位のTierへと格上げされますが、0になった場合は下位のTierへと格下げされます。</p>
 
                             <aside>
@@ -1627,47 +1627,10 @@
 
             <section>
                 <h3>ヒートシンクについて</h3>
-                <p><b>ヒートシンク</b>(Heatsink)は1個につき1秒間に0.1点の熱を取り除きます。また、メックの限界温度を1点増加させる効果があります。装備のために装備欄1枠と重量1トンが必要ですが、空いている装備欄に自由に配置できます。</p>
+                <p><b>ヒートシンク</b>(Heatsink)は1個につき1秒間に0.12点の熱を取り除きます。また、メックの限界温度を1.2点増加させる効果があります。装備のために装備欄1枠と重量1トンが必要ですが、空いている装備欄に自由に配置できます。</p>
                 <p><span class="text-negative">戦闘に出撃するためには、(後述するエンジン内部のヒートシンクを含めて)合計で10個以上のヒートシンクを装備している必要があります。</span></p>
 
-                <p><b>ダブルヒートシンク</b>(Double Heat Sink)のアップグレードを適用すると、通常のヒートシンクの代わりにダブルヒートシンクを装備することが可能になります。ダブルヒートシンクは装備欄が3枠必要になりますが、重量は1トンのままで性能が1.4倍になります。</p>
-
-                <div class="liquidtable">
-                    <table class="heatsink">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Tons</th>
-                                <th>Slots</th>
-                                <th>冷却性能(秒)</th>
-                                <th>限界温度</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="is">
-                                <td>Standard Heatsink</td>
-                                <td>1.0</td>
-                                <td>1</td>
-                                <td>0.10</td>
-                                <td>1.0</td>
-                            </tr>
-                            <tr class="is">
-                                <td>Double Heatsink</td>
-                                <td>1.0</td>
-                                <td>3</td>
-                                <td>0.14</td>
-                                <td>1.4</td>
-                            </tr>
-                            <tr class="clan">
-                                <td>Clan Double Heatsink</td>
-                                <td>1.0</td>
-                                <td>2</td>
-                                <td>0.14</td>
-                                <td>1.4</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <p><b>ダブルヒートシンク</b>(Double Heat Sink)のアップグレードを適用すると、通常のヒートシンクの代わりにダブルヒートシンクを装備することが可能になります。ダブルヒートシンクは装備欄が3枠必要になりますが、重量は1トンのままで性能が強化されます。</p>
             </section>
 
             <section>
@@ -1678,6 +1641,9 @@
 
                 <p>標準的な<b>STDエンジン</b>(スタンダードエンジン)の他に、<b>XLエンジン</b>(エクストラ ライトエンジン)という高価で軽量なエンジンが存在します。<b>XLエンジン</b>は出力に対して非常に軽いので、重量のある強力な武器を装備することができますが、左右の胴体にある装備欄を3枠ずつ追加で占有します。<span class="text-negative">また、XLエンジンを装備している場合は左右どちらかの胴体が破壊された場合にもエンジンが破壊された判定になり、メックが破壊されます。このため、メックが非常に破壊されやすくなります。</span></p>
 
+                <aside>
+                    <p class="tips">クランメックが装備している氏族製のXLエンジンは、左右の胴体が片方破壊されただけでは機能を停止しません。ただし、破壊されるとエンジンの出力が20%低下します。</p>
+                </aside>
 
                 <section>
                     <h4>エンジンに内蔵されたヒートシンクについて</h4>
@@ -1695,7 +1661,8 @@
                     </div>
 
                     <aside>
-                        <p class="tips">エンジンに内蔵されている<b>Double Heat Sink</b>の冷却性能と限界温度は1.4倍ではなく2.0倍になります。このボーナスは内蔵ヒートシンクだけのもので、エンジンの追加スロットに装備したヒートシンクは対象外となります。</p>
+                        <p class="tips">通常の<b>Single Heat Sink</b>の冷却性能は毎秒0.12点ですが、エンジンに内蔵されている<b>Single Heat Sink</b>の冷却性能は毎秒0.11点に弱体化されます。</p>
+                        <p class="tips">エンジンに内蔵されている<b>Double Heat Sink</b>は通常よりも性能が強化されます。このボーナスは内蔵ヒートシンクだけのもので、エンジンの追加スロットに装備したヒートシンクは対象外となります。</p>
                     </aside>
                 </section>
 
@@ -1734,7 +1701,6 @@
                     <aside>
                         <p class="memo">ライトメックにはXLエンジンが軽くてオススメです。</p>
                         <p class="memo">腕が良かったり戦い方が合っている場合、XLエンジンを使うとかなり強くなる場合があります。</p>
-                        <p class="tips">クランメックが装備している氏族製のXLエンジンは、左右の胴体が片方破壊されただけでは機能を停止しません。</p>
                     </aside>
                 </section>
 
@@ -2407,9 +2373,53 @@
                     </ul>
 
                     <aside>
-                        <p class="tips">エンジンに内蔵されているヒートシンクは1.4倍ではなく2.0倍の性能になります。</p>
+                        <p class="tips">エンジンに内蔵されているダブルヒートシンクの性能は通常よりも強化されます。</p>
                         <p class="memo">冷却性能はメックの攻撃力に大きな影響を与えるため非常に人気があります。一部の発熱の少ない装備構成を除き、ほぼすべてのメックで利用されます。</p>
                     </aside>
+
+                    <div class="liquidtable">
+                        <table class="heatsink">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Name</th>
+                                    <th rowspan="2">Tons</th>
+                                    <th rowspan="2">Slots</th>
+                                    <th colspan="2">冷却性能(秒)</th>
+                                    <th rowspan="2">限界温度</th>
+                                </tr>
+                                <tr>
+                                    <th>通常</th>
+                                    <th>内蔵</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="is">
+                                    <td>Standard Heatsink</td>
+                                    <td>1.0</td>
+                                    <td>1</td>
+                                    <td>0.12</td>
+                                    <td>0.11</td>
+                                    <td>1.2</td>
+                                </tr>
+                                <tr class="is">
+                                    <td>Double Heatsink</td>
+                                    <td>1.0</td>
+                                    <td>3</td>
+                                    <td>0.14</td>
+                                    <td>0.2</td>
+                                    <td>1.5</td>
+                                </tr>
+                                <tr class="clan">
+                                    <td>Clan Double Heatsink</td>
+                                    <td>1.0</td>
+                                    <td>2</td>
+                                    <td>0.15</td>
+                                    <td>0.2</td>
+                                    <td>1.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
 
                 <section>
@@ -2581,12 +2591,12 @@
                                 <tr>
                                     <td>Kinetic Burst</td>
                                     <td>1,000</td>
-                                    <td>加速性能 +22.5%</td>
+                                    <td>加速性能 +7.5%</td>
                                 </tr>
                                 <tr>
                                     <td>Twist X</td>
                                     <td>2,500</td>
-                                    <td>胴体の旋回範囲 +10.0%</td>
+                                    <td>胴体の旋回範囲 +2.5%</td>
                                 </tr>
                                 <tr>
                                     <td>Heat Containment</td>
@@ -2596,22 +2606,22 @@
                                 <tr>
                                     <td>Hard Brake</td>
                                     <td>1,500</td>
-                                    <td>減速性能 +25.0%</td>
+                                    <td>減速性能 +7.5%</td>
                                 </tr>
                                 <tr>
                                     <td>Twist Speed</td>
                                     <td>2,500</td>
-                                    <td>胴体の旋回速度 +20.0%</td>
+                                    <td>胴体の旋回速度 +2.5%</td>
                                 </tr>
                                 <tr>
                                     <td>Arm Reflex</td>
                                     <td>1,500</td>
-                                    <td>腕部の移動速度 +15.0%</td>
+                                    <td>腕部の移動速度 +2.5%</td>
                                 </tr>
                                 <tr>
                                     <td>Anchor Turn</td>
                                     <td>3,500</td>
-                                    <td>旋回速度 +10.0%</td>
+                                    <td>旋回速度 +2.5%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2654,7 +2664,7 @@
                                 <tr>
                                     <td>Speed Tweak</td>
                                     <td>8,500</td>
-                                    <td>メックの最大速度 +10.0%</td>
+                                    <td>メックの最大速度 +7.5%</td>
                                 </tr>
                         </table>
                     </div>
@@ -5412,7 +5422,7 @@
 
                     <aside>
                         <p class="link">URL : <a href="https://mwomercs.com/marauder">https://mwomercs.com/marauder</a></p>
-                        <p class="important">このコレクションで販売されるMarauderがゲームに実装されるのは2015年12月1日になります。</p>
+                        <p class="memo">このコレクションで販売されるMarauderは既にゲーム内に実装済みです。</p>
                         <p class="important">Marauderの通常バリアントは将来的に<span class="mc">MC</span>と<span class="cb">C-Bill</span>で購入可能になります。</p>
                         <p class="important">Marauderのヒーローメックは将来的に<span class="mc">MC</span>で購入可能になります。</p>
                     </aside>
