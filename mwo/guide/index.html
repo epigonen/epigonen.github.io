@@ -35,6 +35,9 @@
         <article id="top" class="autoindex-nav">
             <h2>このガイドについて</h2>
             <p>このガイドは<b><abbr title="MechWarrior Online">MWO</abbr></b>を新しくはじめる日本人プレイヤーのためのガイドです。可能な限り正確な内容にしようとは思っていますが、私はあまりMWOに詳しくないのでかなり適当な事を言っている部分があります。また、MWOはオンラインゲームなのでシステムの変更やバランス調整が行われることがあります。こういったアップデートによって、このガイドの内容がまったく通用しなくなっている可能性があります。</p>
+
+            <iframe src="http://store.steampowered.com/widget/342200/" frameborder="0" width="646" height="190"></iframe>
+
             <p>このガイドの文章は、<a href="http://wikiwiki.jp/mwojp/">MechWarrior Online 日本語 Wiki</a>で私が書いていた初心者ガイドやいくつかの記事が元になっています。Wikiは不特定多数の編集者によって維持されるサイトなので私の個人的なオススメなどは控えめにしていたのですが、こちらではそういった事柄も書いていきたいと思っています。</p>
 
             <aside>
@@ -132,7 +135,7 @@
                                 Pilot Challenge I
                                 <ol>
                                     <li>ウェイポイントを順番に辿ってゴールを目指すチャレンジ。緑の煙に触れることで開始する。</li>
-                                    <li>ゴール時の残り時間に応じて報酬を受け取ることができます。すべての条件(ランク)を達成した場合、合計で<span class="cb">2,000,000</span>を受け取る計算になります。<span class="text-negative">このチャレンジには何度でも再挑戦することができます。例えば、最初にシルバーランクでクリアした場合でも、再挑戦でゴールドランクを達成すればゴールドランクの報酬を受け取ることができます。ただし、一度受け取った条件の報酬を2回受け取ることはできないので、無限にお金をもらえたりはしません。</span></li>
+                                    <li>ゴール時の残り時間に応じて報酬を受け取ることができます。すべての条件(ランク)を達成した場合、合計で<span class="cb">2,000,000</span>を受け取る計算になります。このチャレンジには何度でも再挑戦することができます。例えば、最初にシルバーランクでクリアした場合でも、再挑戦でゴールドランクを達成すればゴールドランクの報酬を受け取ることができます。<span class="text-negative">ただし、一度受け取った条件の報酬を2回受け取ることはできないので、無限にお金をもらえたりはしません。</span><span class="text-negative">また、このチャレンジで報酬を取るためには、<b>Thunderbolt TDR-9S</b>という種類のメックに乗っている必要があります。</span>TDT-9Sは<b>MechWarrior Academy</b>内から自由に乗り換えることができます。チュートリアルでは最初からTDR-9Sに乗っているので、乗り換えの必要がありません。</li>
                                 </ol>
                             </li>
                             <li><b>Basic Targeting</b>を開始するための光の柱があるので向かう。</li>
@@ -1043,17 +1046,20 @@
                         <table class="farming">
                             <thead>
                                 <tr>
-                                    <th>クラス</th>
-                                    <th colspan="2">STD エンジン</th>
-                                    <th>XL エンジン</th>
-                                    <th>クランメック</th>
-                                    <th>必要な時間</th>
+                                    <th rowspan="2">クラス</th>
+                                    <th colspan="3">メック(中心領域)</th>
+                                    <th rowspan="2">クランメック</th>
+                                    <th rowspan="2">必要な時間</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">価格帯</th>
+                                    <th>(XLエンジン仕様)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>ライト</td>
-                                    <td>1,388,242</td>
+                                    <td class="range">1,388,242</td>
                                     <td>3,231,842</td>
                                     <td>5,862,992</td>
                                     <td>7,024,974</td>
@@ -1086,6 +1092,10 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <aside>
+                        <p class="memo">XLエンジンが初期装備になっている一部のバリアントはその分価格が高くなっています。</p>
+                    </aside>
                 </div>
 
                 <div class="sub-section">
@@ -1125,6 +1135,10 @@
                     <img src="./img/variant.png" alt="Variant" />
                     <figcaption>Centurionの各種バリアント</figcaption>
                 </figure>
+
+                <aside>
+                    <p class="tips">CN9-Dは高価なXLエンジンを初期装備として装備しているため、他のバリアントと比べて価格が高くなっています。</p>
+                </aside>
 
                 <p>バリアントの数はシャシーによって違いますが、<b>Centurion(CN9)</b>には6種類(4+2種類)のバリアントが存在します。これらのバリアントの内、<b>CN9-A</b>/<b>CN9-AH</b>/<b>CN9-AL</b>/<b>CN9-D</b>の4種類はゲーム内通貨の<span class="cb">C-Bill</span>で購入することができる通常のバリアントです。<b>CN9-YLW Yen-Lo-Wang</b>と<b>CN9-A(C)</b>の2種類は<b>ヒーローメック</b>や<b>チャンピオンメック</b>と呼ばれる特殊なバリアントで、課金通貨の<span class="mc">MC</span>でのみ購入することができます。</p>
 
@@ -1247,19 +1261,15 @@
                     <h4>クランメックについて</h4>
 
                     <p><b>MWO</b>には<b>中心領域(IS)製のメック</b>(ISメック)と<b>氏族(Clan)製のメック</b>(クランメック)の2種類のメックが存在します。<span class="text-negative">中心領域のメックと氏族のメックは違う技術で作られており、中心領域は中心領域の装備だけを、氏族は氏族の装備だけを装備することができます。</span></p>
-                    <p>現在実装されているすべてのクランメックは、<b>オムニポッド</b>と呼ばれる特殊な装備を利用することのできる<b>オムニメック</b>でもあります。オムニメックはすべての部位にそのバリアント仕様のオムニポッドを装備しており、これらのオムニポッドを変更することで、その部位のハードポイントなどを別のバリアントの物に変化させることができます。</p>
+                    <p>現在実際されている多くのクランメックは、<b>オムニポッド</b>と呼ばれる特殊な装備を利用することのできる<b>オムニメック</b>でもあります。オムニメックはすべての部位にそのバリアント仕様のオムニポッドを装備しており、これらのオムニポッドを変更することで、その部位のハードポイントなどを別のバリアントの物に変化させることができます。ただし、オムニメックにはエンジンやアップグレードを変更できないというデメリットも存在します。</p>
+                    <p>2015年12月15日にオムニメックではないクランメック、<b>IICメック</b>が実装されました。IICメックはオムニポッドを利用することができませんが、オムニメックとは違い、エンジンを載せかえたり、アップグレードを自由に変更することができます。</p>
 
                     <figure>
                         <img src="./img/clanmech.png" alt="Clan Mech" />
-                        <figcaption>100トン級クランメック Dire Wolf</figcaption>
+                        <figcaption>100トン級クランメック(オムニメック) Dire Wolf</figcaption>
                     </figure>
 
-                    <p><span class="text-negative">クランメックは、はじめて購入するメックとしてはオススメできません。中心領域製のメックと比べて、氏族製のメックはかなり高価だからです。</span>これは氏族製の装備が中心領域製よりも高価なことや、クランメック(オムニメック)がXLエンジンを標準装備していることなどが原因になっています。</p>
-
-                    <aside>
-                        <p class="memo">どのメックがクランメックかを知るのにはある程度の知識か、ちょっとしたコツが必要です。例えば、バリアントの中にPRIMEと付くものが存在すればクランメックです。</p>
-                        <p class="memo">オムニメックではないクランメック、<b>IICメック</b>が2015年12月に実装されます。</p>
-                    </aside>
+                    <p><span class="text-negative">オムニメックは、はじめて購入するメックとしてはオススメできません。中心領域製のメックと比べて、氏族製のメックはかなり高価だからです。</span>これは氏族製の装備が中心領域製よりも高価なことや、オムニメックがXLエンジンを標準装備していることなどが原因になっています。</p>
 
                     <div class="sub-section">
                         <h5>わかる！オムニメック！</h5>
@@ -1282,12 +1292,29 @@
                                     <li>同じシャシーなら、別のバリアントのオムニポッドと交換できる！(中央の胴体を除く)</li>
                                 </ul>
                             </li>
-                            <li>オムニメックはエンジンが固定されており、変更することができない！</li>
-                            <li>オムニメックは<b>Artemis</b>以外のアップグレードを変更できない！</li>
+                            <li><span class="text-negative">オムニメックはエンジンが固定されており、変更することができない！</span></li>
+                            <li><span class="text-negative">オムニメックは<b>Artemis</b>以外のアップグレードを変更できない！</span></li>
                             <li>
                                 氏族製の<b>XLエンジン</b>は片方の胴体が破壊されただけではメックが破壊されない！左右両方の胴体を破壊する必要がある！
                                 <ul>
                                     <li>中央の胴体が破壊された場合は中心領域製のエンジンと同じくメックが破壊される！</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sub-section">
+                        <h5>わかる！IICメック！</h5>
+                        <ul>
+                            <li>IICメックはオムニメックと同じように氏族製の装備を利用する！さらに、中心領域製のスタンダードエンジンを利用することもできる！</li>
+                            <li><span class="text-negative">IICメックはオムニポッドを装備することができない！</span></li>
+                            <li>IICメックはオムニメックとは違い、エンジンを取り外して変更することができる！</li>
+                            <li>
+                                IICメックは中心領域製メックのようにアップグレードを利用できる！
+                                <ul>
+                                    <li>
+                                        IICメックはオムニメックと同じ高性能なアップグレードを利用する！
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -1316,7 +1343,7 @@
                     <p>個人的には価格が手頃で操作のしやすい、ミディアムメックやヘビーメックから選ぶことをオススメします。<span class="text-positive">ですが、本当に好きなメック、購入したいメックを見つけた場合は、ここに書いてあることを無視してそれを購入してみるのも素晴らしいと思います。</span></p>
 
                     <aside>
-                        <p class="memo">乗っていて楽しいメックを選ぶことは非常に重要です。強いメックや乗っていて楽しいメック、あるいは見た目が気に入ったメックなどが人気のようです。</p>
+                        <p class="memo">乗っていて楽しいメックを選ぶことは非常に重要です。強いメックや戦い方が合っているメック、あるいは見た目が気に入ったメックなどが人気のようです。</p>
                     </aside>
                 </div>
 
@@ -1519,6 +1546,10 @@
                             <figcaption>通常の装備欄とは別に装備する</figcaption>
                         </figure>
                     </div>
+
+                    <aside>
+                        <p class="tips">中央の胴体だけはオムニポッドを変更できません。</p>
+                    </aside>
                 </section>
             </section>
 
@@ -3656,7 +3687,7 @@
                                         <td>SDR-5K(C)</td>
                                         <td>SDR-5D</td>
                                         <td class="text-positive">○</td>
-                                        <td rowspan="23">30日</td>
+                                        <td rowspan="25">30日</td>
                                     </tr>
                                     <tr>
                                         <td>Firestarter</td>
@@ -3749,6 +3780,15 @@
                                         <td style="display: none">30日</td>
                                     </tr>
                                     <tr>
+                                        <td>Wolverine</td>
+                                        <td><span class="mc">5,747</span></td>
+                                        <td>QUARANTINE</td>
+                                        <td>WVR-6K(C)</td>
+                                        <td>WVR-6R</td>
+                                        <td class="text-negative">×</td>
+                                        <td style="display: none">30日</td>
+                                    </tr>
+                                    <tr>
                                         <td>Griffin</td>
                                         <td><span class="mc">6,010</span></td>
                                         <td>SPARKY</td>
@@ -3782,6 +3822,15 @@
                                         <td>JM6-A(C)</td>
                                         <td>JM6-S</td>
                                         <td class="text-positive">○</td>
+                                        <td style="display: none">30日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thunderbolt</td>
+                                        <td><span class="mc">6,610</span></td>
+                                        <td>TOP DOG</td>
+                                        <td>TDR-9SE(C)</td>
+                                        <td>TDR-5SS</td>
+                                        <td class="text-positive">×</td>
                                         <td style="display: none">30日</td>
                                     </tr>
                                     <tr>
@@ -4848,7 +4897,7 @@
 
                     <aside>
                         <p class="link">URL : <a href="https://mwomercs.com/origins">https://mwomercs.com/origins</a></p>
-                        <p class="important">このコレクションで販売されるメックがゲームに実装されるのは2015年12月15日になります。</p>
+                        <p class="memo">このコレクションで販売されるメックは既にゲーム内に実装済みです。</p>
                         <p class="important">このコレクションのメックは将来的に<span class="mc">MC</span>と<span class="cb">C-Bill</span>で購入可能になります。</p>
                     </aside>
 
@@ -5182,7 +5231,7 @@
 
                     <aside>
                         <p class="link">URL : <a href="https://mwomercs.com/resistancetwo">https://mwomercs.com/resistancetwo</a></p>
-                        <p class="important">このコレクションで販売されるメックがゲームに実装されるのは数ヵ月後になります。</p>
+                        <p class="memo">このコレクションで販売されるメックは既にゲーム内に実装済みです。</p>
                         <p class="important">このコレクションのメックは将来的に<span class="mc">MC</span>と<span class="cb">C-Bill</span>で購入可能になります。</p>
                     </aside>
 
@@ -5353,7 +5402,7 @@
                     <aside>
                         <p class="link">URL : <a href="https://mwomercs.com/urbanmech">https://mwomercs.com/urbanmech</a></p>
                         <p class="memo">このコレクションで販売されるUrbanMechは既にゲーム内に実装済みです。</p>
-                        <p class="memo">UrbanMechの通常バリアントはゲーム内から<span class="mc">MC</span>で購入することができます。</p>
+                        <p class="memo">UrbanMechの通常バリアントはゲーム内から<span class="mc">MC</span>または<span class="cb">C-Bill</span>で購入することができます。</p>
                     </aside>
 
                     <div class="liquidtable">
