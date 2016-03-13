@@ -1,88 +1,116 @@
-﻿<form id="randombuild">
-    <label>あなたの名前<input type="text" ng-model="rb.settings.name" /></label>
-    <button ng-click="rb.runBuilder()" ng-disabled="!rb.status.idle() || !rb.validation(rb.settings.tech) || !rb.validation(rb.settings.class) || !rb.validation(rb.settings.weapon)">今日のメック</button>
-    <button ng-click="rb.runBuilder(true)" ng-disabled="!rb.status.idle() || !rb.validation(rb.settings.tech) || !rb.validation(rb.settings.class) || !rb.validation(rb.settings.weapon)">ランダム</button>
 
-    <fieldset ng-class="{'error':!rb.validation(rb.settings.tech)}">
-        <legend>Tech</legend>
-
-        <label><input type="checkbox" ng-model="rb.settings.tech.InnerSphere" />Inner Sphere</label>
-        <label><input type="checkbox" ng-model="rb.settings.tech.Clan" />Clan</label>
-    </fieldset>
-
-    <fieldset ng-class="{'error':!rb.validation(rb.settings.class)}">
-        <legend>Weight Classes</legend>
-
-        <label><input type="checkbox" ng-model="rb.settings.class.light" />Light</label>
-        <label><input type="checkbox" ng-model="rb.settings.class.medium" />Medium</label>
-        <label><input type="checkbox" ng-model="rb.settings.class.heavy" />Heavy</label>
-        <label><input type="checkbox" ng-model="rb.settings.class.assault" />Assault</label>
-    </fieldset>
-
-    <fieldset ng-class="{'error':!rb.validation(rb.settings.variant)}">
-        <legend>Variants</legend>
-
-        <label><input type="checkbox" ng-model="rb.settings.variant.normal" />Normal</label>
-        <label><input type="checkbox" ng-model="rb.settings.variant.champion" />Champion</label>
-        <label><input type="checkbox" ng-model="rb.settings.variant.hero" />Hero</label>
-        <label><input type="checkbox" ng-model="rb.settings.variant.special" />Special</label>
-    </fieldset>
-
-    <fieldset ng-class="{'error':!rb.validation(rb.settings.weapon)}">
-        <legend>Weapons</legend>
-
-        <label><input type="checkbox" ng-model="rb.settings.weapon.ballistic" />Ballistic</label>
-        <label><input type="checkbox" ng-model="rb.settings.weapon.energy" />Energy</label>
-        <label><input type="checkbox" ng-model="rb.settings.weapon.missile" />Missile</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Upgrades</legend>
-
-        <label><input type="checkbox" ng-model="rb.settings.upgrade.armor" />Armor</label>
-        <label><input type="checkbox" ng-model="rb.settings.upgrade.structure" />Structure</label>
-        <label><input type="checkbox" ng-model="rb.settings.upgrade.heatsink" />Heatsink</label>
-        <label><input type="checkbox" ng-model="rb.settings.upgrade.guidance" />Guidance</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Engines</legend>
-
-        <label><input type="checkbox" ng-model="rb.settings.engine.std" />STD</label>
-        <label><input type="checkbox" ng-model="rb.settings.engine.xl" />XL</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Others</legend>
-
-        <label disabled="disabled"><input type="checkbox" ng-model="rb.settings.other.quirk" />Weapon Quirk</label>
-        <label><input type="checkbox" ng-model="rb.settings.other.armor" />Armor</label>
-        <label><input type="checkbox" ng-model="rb.settings.other.jumpjet" />Jumpjet</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Designer</legend>
-        <select ng-if="rb.status.json" ng-model="rb.settings.design.designer" ng-options="d.id as d.name for d in rb.designerList.designer"></select>
-    </fieldset>
+<form id="randombuild">
+  <label>あなたの名前
+    <input type="text" ng-model="rb.settings.name"/>
+  </label>
+  <button ng-click="rb.runBuilder()" ng-disabled="!rb.status.idle() || !rb.validation(rb.settings.tech) || !rb.validation(rb.settings.class) || !rb.validation(rb.settings.weapon)">今日のメック</button>
+  <button ng-click="rb.runBuilder(true)" ng-disabled="!rb.status.idle() || !rb.validation(rb.settings.tech) || !rb.validation(rb.settings.class) || !rb.validation(rb.settings.weapon)">ランダム</button>
+  <fieldset ng-class="{'error':!rb.validation(rb.settings.tech)}">
+    <legend>Tech</legend>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.tech.InnerSphere"/>Inner Sphere
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.tech.Clan"/>Clan
+    </label>
+  </fieldset>
+  <fieldset ng-class="{'error':!rb.validation(rb.settings.class)}">
+    <legend>Weight Classes</legend>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.class.light"/>Light
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.class.medium"/>Medium
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.class.heavy"/>Heavy
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.class.assault"/>Assault
+    </label>
+  </fieldset>
+  <fieldset ng-class="{'error':!rb.validation(rb.settings.variant)}">
+    <legend>Variants</legend>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.variant.normal"/>Normal
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.variant.champion"/>Champion
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.variant.hero"/>Hero
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.variant.special"/>Special
+    </label>
+  </fieldset>
+  <fieldset ng-class="{'error':!rb.validation(rb.settings.weapon)}">
+    <legend>Weapons</legend>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.weapon.ballistic"/>Ballistic
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.weapon.energy"/>Energy
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.weapon.missile"/>Missile
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Upgrades</legend>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.upgrade.armor"/>Armor
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.upgrade.structure"/>Structure
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.upgrade.heatsink"/>Heatsink
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.upgrade.guidance"/>Guidance
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Engines</legend>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.engine.std"/>STD
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.engine.xl"/>XL
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Others</legend>
+    <label disabled="disabled">
+      <input type="checkbox" ng-model="rb.settings.other.quirk"/>Weapon Quirk
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.other.armor"/>Armor
+    </label>
+    <label>
+      <input type="checkbox" ng-model="rb.settings.other.jumpjet"/>Jumpjet
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Designer</legend>
+    <select ng-if="rb.status.json" ng-model="rb.settings.design.designer" ng-options="d.id as d.name for d in rb.designerList.designer"></select>
+  </fieldset>
 </form>
-
 <div id="result">
-    <figure>
-        <img ng-src="https://static.mwomercs.com/img/theme/mechbay/{{rb.result.name}}.png" ng-if="rb.result.name" />
-    </figure>
-    <div ng-if="rb.result">
-        <b>{{rb.result.chassis|uppercase}} {{rb.result.name_translated}}</b> <b ng-if="rb.result.description">({{rb.result.description}})</b>
-        <ul>
-            <li ng-init="class={ 0:'Light', 1:'Medium', 2:'Heavy', 3:'Assault' }">Tonnage: {{rb.result.tons}} ({{class[rb.result.class]}})</li>
-            <li>Engine: {{rb.result.engine.current.rating}} {{rb.result.engine.current.type ? "XL" : "Standard"}} (Max {{rb.result.engine.max}})</li>
-            <li>Top Speed: {{rb.getSpeed(rb.result.engine.current.rating, rb.result.tons)}} kph</li>
-            <li>Armor: {{rb.result.armor.current}} {{rb.result.upgrades.armor ? "Ferro-Fibrous" : "Standard" }} (Max {{rb.result.armor.max}})</li>
-            <li>Internal Structure: {{rb.result.upgrades.structure ? "Endo-Steel" : "Standard"}}</li>
-            <li>Heatsink: {{rb.result.upgrades.heatsink ? "Double" : "Standard" }}</li>
-            <li>Jump Jets: {{rb.result.jumpjets.current}} (Max {{rb.result.jumpjets.max}})</li>
-            <li>ECM Capable: {{rb.result.ecm ? "Yes" : "No"}}</li>
-            <li>MASC Capable: {{rb.result.masc ? "Yes" : "No"}}</li>
-            <li ng-repeat="(key, w) in rb.result.weapon">{{key|capitalize}} Weapon : {{w.name_translated}}</li>
-        </ul>
-    </div>
+  <figure><img ng-src="https://static.mwomercs.com/img/theme/mechbay/{{rb.result.name}}.png" ng-if="rb.result.name"/></figure>
+  <div ng-if="rb.result"><b>{{rb.result.chassis|uppercase}} {{rb.result.name_translated}}</b> <b ng-if="rb.result.description">({{rb.result.description}})</b>
+    <ul>
+      <li ng-init="class={ 0:'Light', 1:'Medium', 2:'Heavy', 3:'Assault' }">Tonnage: {{rb.result.tons}} ({{class[rb.result.class]}})</li>
+      <li>Engine: {{rb.result.engine.current.rating}} {{rb.result.engine.current.type ? "XL" : "Standard"}} (Max {{rb.result.engine.max}})</li>
+      <li>Top Speed: {{rb.getSpeed(rb.result.engine.current.rating, rb.result.tons)}} kph</li>
+      <li>Armor: {{rb.result.armor.current}} {{rb.result.upgrades.armor ? "Ferro-Fibrous" : "Standard" }} (Max {{rb.result.armor.max}})</li>
+      <li>Internal Structure: {{rb.result.upgrades.structure ? "Endo-Steel" : "Standard"}}</li>
+      <li>Heatsink: {{rb.result.upgrades.heatsink ? "Double" : "Standard" }}</li>
+      <li>Jump Jets: {{rb.result.jumpjets.current}} (Max {{rb.result.jumpjets.max}})</li>
+      <li>ECM Capable: {{rb.result.ecm ? "Yes" : "No"}}</li>
+      <li>MASC Capable: {{rb.result.masc ? "Yes" : "No"}}</li>
+      <li ng-repeat="(key, w) in rb.result.weapon">{{key|capitalize}} Weapon : {{w.name_translated}}</li>
+    </ul>
+  </div>
 </div>
