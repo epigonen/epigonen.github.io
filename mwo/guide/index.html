@@ -608,9 +608,13 @@
         <section id="s3-4">
           <h3>ゲームモードについて</h3>
           <p>このゲームにはルールの違ういくつかのゲームモードが存在しますが、そのすべてが合計24人のプレイヤーによる12対12の対戦です。</p>
-          <p><b>QUICK PLAY</b>ボタンからは<b>Assault</b>/<b>Conquest</b>/<b>Skirmish</b>の3種類のゲームモードで遊ぶことができます。この3種類は最も基本的なゲームモードで、ほとんどのプレイヤーがこれで遊んでいます。</p>
+          <p><b>QUICK PLAY</b>ボタンからは<b>Assault</b>/<b>Conquest</b>/<b>Skirmish</b>/<b>Domination</b>の4種類のゲームモードで遊ぶことができます。この3種類は最も基本的なゲームモードで、ほとんどのプレイヤーがこれで遊んでいます。</p>
+          <aside>
+            <p class="tips">2016年3月15日に新しいゲームモードのDominationが実装されました。</p>
+            <p class="tips">AssaultやConquest、Dominationなどで拠点を占領中に攻撃を受けた場合、拠点の占領が5秒間中断されます。</p>
+          </aside>
           <div class="sub-section">
-            <h5>ゲームモード: Assault</h5>
+            <h4>ゲームモード: Assault</h4>
             <figure><img src="./img/gamemode_assault.png" alt="Gamemode: Assault"/></figure>
             <p>このゲームモードはそれぞれのチームの初期地点に基地(Base)が存在します。
               <s>この基地の周囲には敵を自動で攻撃する砲台(Turret)が配置されており、敵が近付くと攻撃形態に移行してミサイルやレーザーで攻撃を行います。この砲台はダメージを与えることで破壊できますが、攻撃形態に移行していない砲台はダメージのほとんどを軽減する能力を持っています。</s><span class="text-negative">このゲームモードの砲台はすべて撤去されてしまいました。</span>
@@ -625,20 +629,20 @@
             </aside>
           </div>
           <div class="sub-section">
-            <h5>ゲームモード: Conquest</h5>
+            <h4>ゲームモード: Conquest</h4>
             <figure><img src="./img/gamemode_conquest.png" alt="Gamemode: Conquest"/></figure>
             <p>このゲームモードはマップ内に複数の採掘施設(Resource Collector)が存在します。この施設は周囲に一定時間留まることで占領が可能で、占領している施設の数に応じて資源ゲージが増加していきます。</p>
             <ul>
-              <li>敵チームのすべてのメックを破壊することで勝利します。</li>
+              <li>敵チームのすべてのメックを破壊し、資源が750集まるのに必要なだけの採掘施設を占領することで勝利します。</li>
               <li>または、資源を750まで集めることで勝利します。</li>
-              <li>制限時間以内に勝負がつかなかった場合…どうなるんでしょうか、私は知りません。</li>
+              <li>制限時間以内に勝負がつかなかった場合、集めた資源の多いチームが勝利します。</li>
             </ul>
             <aside>
               <p class="memo">資源を集めて勝利するゲームモードに思えますが、敵を全滅させて勝利することが少なくありません。敵を倒せば施設の占領も楽になりますし、戦闘自体も楽になります。</p>
             </aside>
           </div>
           <div class="sub-section">
-            <h5>ゲームモード: Skirmish</h5>
+            <h4>ゲームモード: Skirmish</h4>
             <figure><img src="./img/gamemode_skirmish.png" alt="Gamemode: Skirmish"/></figure>
             <p>このゲームモードには基地も採掘施設もありません。</p>
             <ul>
@@ -648,6 +652,22 @@
             <aside>
               <p class="memo">敵を倒すだけというわかりやすいルールですが、敵が逃げたり隠れたりしていると戦闘が長引いて面倒なことになります。</p>
             </aside>
+          </div>
+          <div class="sub-section">
+            <h4>ゲームモード: Domination</h4>
+            <figure><img src="./img/gamemode_domination.png" alt="Gamemode: Domination"/></figure>
+            <p>このゲームモードはマップ中央付近に占領可能な施設(Communications Beacon)が存在します。この施設は三つの条件を満たすことで占領が可能で、占領しているチームはカウントダウンタイマーが進行していきます。</p>
+            <p>また、それぞれのチームは初期地点付近に破壊可能なMobile Field Baseを2両ずつ持ちます。この車両が破壊された場合、破壊されたチームはペナルティとしてカウントダウンタイマーが+15秒されます。ただし、カウントダウンタイマーは初期値である1分が最大値なので、有効に使うためにはカウントが進んだ状態で破壊する必要があります。</p>
+            <ul>
+              <li>敵チームのすべてのメックを破壊し、中央にある施設の400m以内に入ることで勝利します。ただし、試合の残り時間が占領に必要な時間を上回っている必要があります。</li>
+              <li>カウントダウンタイマーを0にすることで勝利します。</li>
+              <li>制限時間以内に勝負がつかなかった場合、タイマーの残り時間が少ないチームが勝利します。</li>
+            </ul><b>占領条件</b>
+            <ul>
+              <li>Communications Beaconの400m以内に味方がいる。</li>
+              <li>Communications Beaconの400m以内に敵がいない。</li>
+              <li>5秒間攻撃を受けていない。</li>
+            </ul>
           </div>
         </section>
         <section id="s3-5">
@@ -1427,7 +1447,7 @@
               <h5>実弾系の特殊な武器について</h5>
               <dl>
                 <dt>Ultra AC系</dt>
-                <dd>通常のオートキャノンよりも要求装備欄や重量が増加していますが、発射直後に1度だけ再発射(つまり2連射)が可能です。<span class="text-negative">2連射時に一定確率(Ultra AC/5の場合は15%)で弾詰まりが発生するデメリットもあります。</span></dd>
+                <dd>通常のオートキャノンよりも要求装備欄や重量が増加していますが、発射直後に1度だけ再発射(つまり2連射)が可能です。<span class="text-negative">2連射時に一定確率(Ultra AC/5の場合は15%)で弾詰まりが発生し、5秒間使用できなくなるデメリットもあります。</span></dd>
                 <dt>LBX AC系</dt>
                 <dd>通常のオートキャノンとは違い、威力1点の弾丸を散弾状に複数発射します。通常の武器よりもクリティカル発生率とクリティカルダメージが高く設定されています。</dd>
                 <dd>散弾状で発射されるため命中させやすいですが、距離が離れるほど弾が分散してしまい、ダメージを集中させにくくなります。</dd>
@@ -3480,13 +3500,31 @@
                   </thead>
                   <tbody>
                     <tr>
+                      <td>Locust</td>
+                      <td><span class="mc">3,185</span></td>
+                      <td>PIRATES' BANE</td>
+                      <td>LCT-1E(C)</td>
+                      <td>LCT-3M</td>
+                      <td class="text-negative">×</td>
+                      <td rowspan="30">30日</td>
+                    </tr>
+                    <tr>
+                      <td>Commando </td>
+                      <td><span class="mc">3,810</span></td>
+                      <td>DEATH'S KNELL</td>
+                      <td>COM-1D(C)</td>
+                      <td>COM-2D</td>
+                      <td class="text-positive">○</td>
+                      <td class="dummy"> </td>
+                    </tr>
+                    <tr>
                       <td>Spider</td>
                       <td><span class="mc">4,325</span></td>
                       <td>ANANSI</td>
                       <td>SDR-5K(C)</td>
                       <td>SDR-5D</td>
                       <td class="text-positive">○</td>
-                      <td rowspan="25">30日</td>
+                      <td class="dummy"> </td>
                     </tr>
                     <tr>
                       <td>Firestarter</td>
@@ -3530,6 +3568,15 @@
                       <td>THE ARROW</td>
                       <td>BJ-1(C)</td>
                       <td>BJ-3</td>
+                      <td class="text-negative">×</td>
+                      <td class="dummy"> </td>
+                    </tr>
+                    <tr>
+                      <td>Vindicator </td>
+                      <td><span class="mc">4,990</span></td>
+                      <td>ST. IVES' BLUES</td>
+                      <td>VND-1AA(C)</td>
+                      <td>VND-1X</td>
                       <td class="text-negative">×</td>
                       <td class="dummy"> </td>
                     </tr>
@@ -3660,11 +3707,29 @@
                       <td class="dummy"> </td>
                     </tr>
                     <tr>
+                      <td>Awesome </td>
+                      <td><span class="mc">9,285</span></td>
+                      <td>PRETTY BABY</td>
+                      <td>AWS-9M(C)</td>
+                      <td>AWS-8Q</td>
+                      <td class="text-positive">○</td>
+                      <td class="dummy"> </td>
+                    </tr>
+                    <tr>
                       <td>Victor</td>
                       <td><span class="mc">8,045</span></td>
                       <td>DRAGON SLAYER</td>
                       <td>VTR-9S(C)</td>
                       <td>VTR-9B</td>
+                      <td class="text-negative">×</td>
+                      <td class="dummy"> </td>
+                    </tr>
+                    <tr>
+                      <td>Battlemaster</td>
+                      <td><span class="mc">8,705</span></td>
+                      <td>HELLSLINGER</td>
+                      <td>BLR-2C(C)</td>
+                      <td>BLR-1S</td>
                       <td class="text-negative">×</td>
                       <td class="dummy"> </td>
                     </tr>
@@ -5982,7 +6047,7 @@
             <p>中心領域製のヘビーメック(70トン) Archerのコレクションです。</p>
             <aside>
               <p class="link">URL : <a href="https://mwomercs.com/archer">https://mwomercs.com/archer</a></p>
-              <p class="important"><span class="text-negative">このコレクションは予約販売の段階なので、実際にゲームに実装されるのはしばらく先になります。</span></p>
+              <p class="tips"><span class="text-positive">このコレクションで販売されるメックは既にゲーム内に実装済みです。</span></p>
               <p class="important"><span class="text-negative">このコレクションのメックは将来的に<span class="mc">MC</span>と<span class="cb">C-Bill</span>で購入可能になります。</span></p>
               <table class="important">
                 <caption>実装/販売スケジュール</caption>
